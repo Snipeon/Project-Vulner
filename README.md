@@ -8,3 +8,5 @@ Then does a searchsploit assessment based on the detected services.
 Lastly the script saves all the results into a neat lil' file at a user defined location.
 
 And it opens the file for you. lol.
+
+I've attached an example of the output of the script.
