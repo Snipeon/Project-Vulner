@@ -1,0 +1,573 @@
+netdiscover scan results on 192.168.19.0/24: 
+
+ _____________________________________________________________________________
+   IP            At MAC Address     Count     Len  MAC Vendor / Hostname      
+ -----------------------------------------------------------------------------
+ 192.168.19.1    00:50:56:c0:00:08      1      60  VMware, Inc.
+ 192.168.19.2    00:50:56:e5:dd:d9      1      60  VMware, Inc.
+ 192.168.19.128  00:0c:29:eb:88:c6      1      60  VMware, Inc.
+ 192.168.19.131  00:0c:29:a6:e0:41      1      60  VMware, Inc.
+ 192.168.19.132  00:0c:29:c0:f9:b6      1      60  VMware, Inc.
+ 192.168.19.254  00:50:56:f7:6a:97      1      60  VMware, Inc.
+
+-- Active scan completed, 6 Hosts found.
+
+
+nmap TCP scan results on 192.168.19.1: 
+
+# Nmap 7.94SVN scan initiated Sat Oct 12 20:50:19 2024 as: /usr/lib/nmap/nmap -sV -Pn -A -oN nmap_TCP_192.168.19.1 192.168.19.1
+Nmap scan report for 192.168.19.1
+Host is up (0.000082s latency).
+All 1000 scanned ports on 192.168.19.1 are in ignored states.
+Not shown: 1000 filtered tcp ports (no-response)
+MAC Address: 00:50:56:C0:00:08 (VMware)
+Too many fingerprints match this host to give specific OS details
+Network Distance: 1 hop
+
+TRACEROUTE
+HOP RTT     ADDRESS
+1   0.08 ms 192.168.19.1
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sat Oct 12 20:50:48 2024 -- 1 IP address (1 host up) scanned in 29.02 seconds
+
+
+masscan UDP scan results on 192.168.19.1: 
+
+
+
+searchsploit vulnerability assessment result for 192.168.19.1: 
+
+
+
+
+nmap TCP scan results on 192.168.19.2: 
+
+# Nmap 7.94SVN scan initiated Sat Oct 12 20:52:14 2024 as: /usr/lib/nmap/nmap -sV -Pn -A -oN nmap_TCP_192.168.19.2 192.168.19.2
+Nmap scan report for 192.168.19.2
+Host is up (0.00030s latency).
+Not shown: 999 closed tcp ports (reset)
+PORT   STATE SERVICE VERSION
+53/tcp open  domain  Cloudflare public DNS
+MAC Address: 00:50:56:E5:DD:D9 (VMware)
+Aggressive OS guesses: VMware Player virtual NAT device (99%), Microsoft Windows XP SP3 or Windows 7 or Windows Server 2012 (93%), DD-WRT v24-sp2 (Linux 2.4.37) (91%), Microsoft Windows XP SP3 (91%), Actiontec MI424WR-GEN3I WAP (90%), DVTel DVT-9540DW network camera (89%), Linux 3.2 (89%), Linux 4.4 (89%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 1 hop
+
+TRACEROUTE
+HOP RTT     ADDRESS
+1   0.30 ms 192.168.19.2
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sat Oct 12 20:52:32 2024 -- 1 IP address (1 host up) scanned in 18.02 seconds
+
+
+masscan UDP scan results on 192.168.19.2: 
+
+#masscan
+open udp 53 192.168.19.2 1728780758
+# end
+
+
+nmap UDP scan results on 192.168.19.2: 
+
+# Nmap 7.94SVN scan initiated Sat Oct 12 20:53:22 2024 as: /usr/lib/nmap/nmap -sV -sU -p 53, -A -oN nmap_UDP_192.168.19.2 192.168.19.2
+Nmap scan report for 192.168.19.2
+Host is up (0.00015s latency).
+
+PORT   STATE SERVICE VERSION
+53/udp open  domain  Cloudflare public DNS
+|_dns-recursion: Recursion appears to be enabled
+MAC Address: 00:50:56:E5:DD:D9 (VMware)
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: specialized
+Running: VMware Player
+OS CPE: cpe:/a:vmware:player
+OS details: VMware Player virtual NAT device
+Network Distance: 1 hop
+
+TRACEROUTE
+HOP RTT     ADDRESS
+1   0.15 ms 192.168.19.2
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sat Oct 12 20:53:28 2024 -- 1 IP address (1 host up) scanned in 5.98 seconds
+
+
+searchsploit vulnerability assessment result for 192.168.19.2: 
+
+searchsploit vulnerability assessment for 53/tcp domain Cloudflare public DNS: 
+Exploits: No Results
+Shellcodes: No Results
+Papers: No Results
+
+searchsploit vulnerability assessment for 53/udp domain Cloudflare public DNS: 
+Exploits: No Results
+Shellcodes: No Results
+Papers: No Results
+
+searchsploit vulnerability assessment for Warning: results may be unreliable because we could not find at least 1 open and 1 closed port: 
+Exploits: No Results
+Shellcodes: No Results
+Papers: No Results
+
+
+
+
+nmap TCP scan results on 192.168.19.128: 
+
+# Nmap 7.94SVN scan initiated Sat Oct 12 20:53:29 2024 as: /usr/lib/nmap/nmap -sV -Pn -A -oN nmap_TCP_192.168.19.128 192.168.19.128
+Nmap scan report for 192.168.19.128
+Host is up (0.00029s latency).
+Not shown: 997 closed tcp ports (reset)
+PORT   STATE SERVICE VERSION
+21/tcp open  ftp     vsftpd 3.0.5
+22/tcp open  ssh     OpenSSH 8.9p1 Ubuntu 3ubuntu0.10 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   256 56:eb:52:af:7c:9b:24:c9:39:cb:ad:4a:1b:7c:d4:29 (ECDSA)
+|_  256 b0:5e:14:3f:10:9b:48:70:b2:23:87:08:29:4a:0f:04 (ED25519)
+80/tcp open  http    Apache httpd 2.4.52 ((Ubuntu))
+|_http-title: Apache2 Ubuntu Default Page: It works
+|_http-server-header: Apache/2.4.52 (Ubuntu)
+MAC Address: 00:0C:29:EB:88:C6 (VMware)
+Device type: general purpose
+Running: Linux 4.X|5.X
+OS CPE: cpe:/o:linux:linux_kernel:4 cpe:/o:linux:linux_kernel:5
+OS details: Linux 4.15 - 5.8
+Network Distance: 1 hop
+Service Info: OSs: Unix, Linux; CPE: cpe:/o:linux:linux_kernel
+
+TRACEROUTE
+HOP RTT     ADDRESS
+1   0.29 ms 192.168.19.128
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sat Oct 12 20:53:39 2024 -- 1 IP address (1 host up) scanned in 10.65 seconds
+
+
+masscan UDP scan results on 192.168.19.128: 
+
+
+
+Bruteforce scan results on 192.168.19.128: 
+
+# Medusa v.2.2 (2024-10-12 21:01:48)
+# medusa -h 192.168.19.128 -U /usr/share/seclists/Usernames/top-usernames-shortlist.txt -P /usr/share/seclists/Usernames/top-usernames-shortlist.txt -M ssh -t 32 -v 4 -w 0 -O medusa_192.168.19.128 
+# Medusa has finished (2024-10-12 21:03:51).
+
+
+searchsploit vulnerability assessment result for 192.168.19.128: 
+
+searchsploit vulnerability assessment for 21/tcp ftp vsftpd 3.0.5: 
+Exploits: No Results
+Shellcodes: No Results
+Papers: No Results
+
+searchsploit vulnerability assessment for 22/tcp ssh OpenSSH 8.9p1 Ubuntu 3ubuntu0.10 (Ubuntu Linux; protocol 2.0): 
+Exploits: No Results
+Shellcodes: No Results
+Papers: No Results
+
+searchsploit vulnerability assessment for 80/tcp http Apache httpd 2.4.52 ((Ubuntu)): 
+Exploits: No Results
+Shellcodes: No Results
+Papers: No Results
+
+
+
+
+nmap TCP scan results on 192.168.19.131: 
+
+# Nmap 7.94SVN scan initiated Sat Oct 12 21:03:52 2024 as: /usr/lib/nmap/nmap -sV -Pn -A -oN nmap_TCP_192.168.19.131 192.168.19.131
+Nmap scan report for 192.168.19.131
+Host is up (0.00015s latency).
+All 1000 scanned ports on 192.168.19.131 are in ignored states.
+Not shown: 1000 closed tcp ports (reset)
+MAC Address: 00:0C:29:A6:E0:41 (VMware)
+Too many fingerprints match this host to give specific OS details
+Network Distance: 1 hop
+
+TRACEROUTE
+HOP RTT     ADDRESS
+1   0.15 ms 192.168.19.131
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sat Oct 12 21:03:53 2024 -- 1 IP address (1 host up) scanned in 1.86 seconds
+
+
+masscan UDP scan results on 192.168.19.131: 
+
+
+
+searchsploit vulnerability assessment result for 192.168.19.131: 
+
+
+
+
+nmap TCP scan results on 192.168.19.132: 
+
+# Nmap 7.94SVN scan initiated Sat Oct 12 21:04:14 2024 as: /usr/lib/nmap/nmap -sV -Pn -A -oN nmap_TCP_192.168.19.132 192.168.19.132
+Nmap scan report for msf1 (192.168.19.132)
+Host is up (0.00039s latency).
+Not shown: 977 closed tcp ports (reset)
+PORT     STATE SERVICE     VERSION
+21/tcp   open  ftp         vsftpd 2.3.4
+|_ftp-anon: Anonymous FTP login allowed (FTP code 230)
+| ftp-syst: 
+|   STAT: 
+| FTP server status:
+|      Connected to 192.168.19.137
+|      Logged in as ftp
+|      TYPE: ASCII
+|      No session bandwidth limit
+|      Session timeout in seconds is 300
+|      Control connection is plain text
+|      Data connections will be plain text
+|      vsFTPd 2.3.4 - secure, fast, stable
+|_End of status
+22/tcp   open  ssh         OpenSSH 4.7p1 Debian 8ubuntu1 (protocol 2.0)
+| ssh-hostkey: 
+|   1024 60:0f:cf:e1:c0:5f:6a:74:d6:90:24:fa:c4:d5:6c:cd (DSA)
+|_  2048 56:56:24:0f:21:1d:de:a7:2b:ae:61:b1:24:3d:e8:f3 (RSA)
+23/tcp   open  telnet      Linux telnetd
+25/tcp   open  smtp        Postfix smtpd
+|_ssl-date: 2024-09-22T07:31:57+00:00; -20d17h32m39s from scanner time.
+| sslv2: 
+|   SSLv2 supported
+|   ciphers: 
+|     SSL2_DES_192_EDE3_CBC_WITH_MD5
+|     SSL2_RC4_128_EXPORT40_WITH_MD5
+|     SSL2_RC2_128_CBC_WITH_MD5
+|     SSL2_RC4_128_WITH_MD5
+|     SSL2_RC2_128_CBC_EXPORT40_WITH_MD5
+|_    SSL2_DES_64_CBC_WITH_MD5
+|_smtp-commands: metasploitable.localdomain, PIPELINING, SIZE 10240000, VRFY, ETRN, STARTTLS, ENHANCEDSTATUSCODES, 8BITMIME, DSN
+| ssl-cert: Subject: commonName=ubuntu804-base.localdomain/organizationName=OCOSA/stateOrProvinceName=There is no such thing outside US/countryName=XX
+| Not valid before: 2010-03-17T14:07:45
+|_Not valid after:  2010-04-16T14:07:45
+53/tcp   open  domain      ISC BIND 9.4.2
+| dns-nsid: 
+|_  bind.version: 9.4.2
+80/tcp   open  http        Apache httpd 2.2.8 ((Ubuntu) DAV/2)
+|_http-server-header: Apache/2.2.8 (Ubuntu) DAV/2
+|_http-title: Metasploitable2 - Linux
+111/tcp  open  rpcbind     2 (RPC #100000)
+| rpcinfo: 
+|   program version    port/proto  service
+|   100000  2            111/tcp   rpcbind
+|   100000  2            111/udp   rpcbind
+|   100003  2,3,4       2049/tcp   nfs
+|   100003  2,3,4       2049/udp   nfs
+|   100005  1,2,3      42103/udp   mountd
+|   100005  1,2,3      55362/tcp   mountd
+|   100021  1,3,4      44871/tcp   nlockmgr
+|   100021  1,3,4      51932/udp   nlockmgr
+|   100024  1          42794/tcp   status
+|_  100024  1          46498/udp   status
+139/tcp  open  netbios-ssn Samba smbd 3.X - 4.X (workgroup: WORKGROUP)
+445/tcp  open  netbios-ssn Samba smbd 3.0.20-Debian (workgroup: WORKGROUP)
+512/tcp  open  exec        netkit-rsh rexecd
+513/tcp  open  login       OpenBSD or Solaris rlogind
+514/tcp  open  tcpwrapped
+1099/tcp open  java-rmi    GNU Classpath grmiregistry
+1524/tcp open  bindshell   Metasploitable root shell
+2049/tcp open  nfs         2-4 (RPC #100003)
+2121/tcp open  ftp         ProFTPD 1.3.1
+3306/tcp open  mysql       MySQL 5.0.51a-3ubuntu5
+| mysql-info: 
+|   Protocol: 10
+|   Version: 5.0.51a-3ubuntu5
+|   Thread ID: 5722
+|   Capabilities flags: 43564
+|   Some Capabilities: LongColumnFlag, SwitchToSSLAfterHandshake, SupportsTransactions, SupportsCompression, Speaks41ProtocolNew, Support41Auth, ConnectWithDatabase
+|   Status: Autocommit
+|_  Salt: HyIBNCCg^"-XW*iSFBVm
+5432/tcp open  postgresql  PostgreSQL DB 8.3.0 - 8.3.7
+|_ssl-date: 2024-09-22T07:31:57+00:00; -20d17h32m39s from scanner time.
+| ssl-cert: Subject: commonName=ubuntu804-base.localdomain/organizationName=OCOSA/stateOrProvinceName=There is no such thing outside US/countryName=XX
+| Not valid before: 2010-03-17T14:07:45
+|_Not valid after:  2010-04-16T14:07:45
+5900/tcp open  vnc         VNC (protocol 3.3)
+| vnc-info: 
+|   Protocol version: 3.3
+|   Security types: 
+|_    VNC Authentication (2)
+6000/tcp open  X11         (access denied)
+6667/tcp open  irc         UnrealIRCd
+| irc-info: 
+|   users: 1
+|   servers: 1
+|   lusers: 1
+|   lservers: 0
+|   server: irc.Metasploitable.LAN
+|   version: Unreal3.2.8.1. irc.Metasploitable.LAN 
+|   uptime: 0 days, 14:46:55
+|   source ident: nmap
+|   source host: F752BB61.409BFA1D.FFFA6D49.IP
+|_  error: Closing Link: rehxjlrub[192.168.19.137] (Quit: rehxjlrub)
+8009/tcp open  ajp13       Apache Jserv (Protocol v1.3)
+|_ajp-methods: Failed to get a valid response for the OPTION request
+8180/tcp open  http        Apache Tomcat/Coyote JSP engine 1.1
+|_http-server-header: Apache-Coyote/1.1
+|_http-favicon: Apache Tomcat
+|_http-title: Apache Tomcat/5.5
+MAC Address: 00:0C:29:C0:F9:B6 (VMware)
+Device type: general purpose
+Running: Linux 2.6.X
+OS CPE: cpe:/o:linux:linux_kernel:2.6
+OS details: Linux 2.6.9 - 2.6.33
+Network Distance: 1 hop
+Service Info: Hosts:  metasploitable.localdomain, irc.Metasploitable.LAN; OSs: Unix, Linux; CPE: cpe:/o:linux:linux_kernel
+
+Host script results:
+|_smb2-time: Protocol negotiation failed (SMB2)
+|_nbstat: NetBIOS name: METASPLOITABLE, NetBIOS user: <unknown>, NetBIOS MAC: <unknown> (unknown)
+|_clock-skew: mean: -20d16h32m39s, deviation: 2h00m00s, median: -20d17h32m39s
+| smb-os-discovery: 
+|   OS: Unix (Samba 3.0.20-Debian)
+|   Computer name: metasploitable
+|   NetBIOS computer name: 
+|   Domain name: localdomain
+|   FQDN: metasploitable.localdomain
+|_  System time: 2024-09-22T03:31:48-04:00
+| smb-security-mode: 
+|   account_used: guest
+|   authentication_level: user
+|   challenge_response: supported
+|_  message_signing: disabled (dangerous, but default)
+
+TRACEROUTE
+HOP RTT     ADDRESS
+1   0.39 ms msf1 (192.168.19.132)
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sat Oct 12 21:04:36 2024 -- 1 IP address (1 host up) scanned in 22.19 seconds
+
+
+masscan UDP scan results on 192.168.19.132: 
+
+#masscan
+open udp 137 192.168.19.132 1728781482
+open udp 53 192.168.19.132 1728781483
+# end
+
+
+nmap UDP scan results on 192.168.19.132: 
+
+# Nmap 7.94SVN scan initiated Sat Oct 12 21:07:59 2024 as: /usr/lib/nmap/nmap -sV -sU -p 137,53, -A -oN nmap_UDP_192.168.19.132 192.168.19.132
+Nmap scan report for msf1 (192.168.19.132)
+Host is up (0.00016s latency).
+
+PORT    STATE SERVICE    VERSION
+53/udp  open  domain     ISC BIND 9.4.2
+|_dns-recursion: Recursion appears to be enabled
+| dns-nsid: 
+|_  bind.version: 9.4.2
+137/udp open  netbios-ns Microsoft Windows netbios-ns (workgroup: WORKGROUP)
+| nbns-interfaces: 
+|   hostname: METASPLOITABLE
+|   interfaces: 
+|_    192.168.19.132
+MAC Address: 00:0C:29:C0:F9:B6 (VMware)
+Too many fingerprints match this host to give specific OS details
+Network Distance: 1 hop
+Service Info: Host: METASPLOITABLE; OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+|_nbstat: NetBIOS name: METASPLOITABLE, NetBIOS user: <unknown>, NetBIOS MAC: <unknown> (unknown)
+
+TRACEROUTE
+HOP RTT     ADDRESS
+1   0.16 ms msf1 (192.168.19.132)
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sat Oct 12 21:08:01 2024 -- 1 IP address (1 host up) scanned in 1.77 seconds
+
+
+Bruteforce scan results on 192.168.19.132: 
+
+# Medusa v.2.2 (2024-10-12 21:08:11)
+# medusa -h 192.168.19.132 -U /usr/share/seclists/Usernames/top-usernames-shortlist.txt -P /usr/share/seclists/Usernames/top-usernames-shortlist.txt -M ssh -t 32 -v 4 -w 0 -O medusa_192.168.19.132 
+ACCOUNT FOUND: [ssh] Host: 192.168.19.132 User: user Password: user [SUCCESS]
+# Medusa has finished (2024-10-12 21:09:13).
+
+
+searchsploit vulnerability assessment result for 192.168.19.132: 
+
+searchsploit vulnerability assessment for 21/tcp ftp vsftpd 2.3.4: 
+-------------------------------------------------------------------------------------------------------------------------------------------------------- ---------------------------------
+ Exploit Title                                                                                                                                          |  Path
+-------------------------------------------------------------------------------------------------------------------------------------------------------- ---------------------------------
+[01;31m[Kvsftpd[m[K [01;31m[K2.3.4[m[K - Backdoor Command Execution                                                                                                               | unix/remote/49757.py
+[01;31m[Kvsftpd[m[K [01;31m[K2.3.4[m[K - Backdoor Command Execution (Metasploit)                                                                                                  | unix/remote/17491.rb
+-------------------------------------------------------------------------------------------------------------------------------------------------------- ---------------------------------
+Shellcodes: No Results
+Papers: No Results
+
+searchsploit vulnerability assessment for 22/tcp ssh OpenSSH 4.7p1 Debian 8ubuntu1 (protocol 2.0): 
+Exploits: No Results
+Shellcodes: No Results
+Papers: No Results
+
+searchsploit vulnerability assessment for 23/tcp telnet Linux telnetd: 
+-------------------------------------------------------------------------------------------------------------------------------------------------------- ---------------------------------
+ Exploit Title                                                                                                                                          |  Path
+-------------------------------------------------------------------------------------------------------------------------------------------------------- ---------------------------------
+netkit-[01;31m[Ktelnet[m[K-0.17 [01;31m[Ktelnetd[m[K (Fedora 31) - 'BraveStarr' Remote Code Execution                                                                             | [01;31m[Klinux[m[K/remote/48170.py
+[01;31m[KTelnetD[m[K encrypt_keyid - Function Pointer Overwrite                                                                                                      | [01;31m[Klinux[m[K/remote/18280.c
+-------------------------------------------------------------------------------------------------------------------------------------------------------- ---------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------------- ---------------------------------
+ Shellcode Title                                                                                                                                        |  Path
+-------------------------------------------------------------------------------------------------------------------------------------------------------- ---------------------------------
+[01;31m[KLinux[m[K/MIPS (Little Endian) - system([01;31m[Ktelnetd[m[K -l /bin/sh) Shellcode (80 bytes)                                                                            | [01;31m[Klinux[m[K_mips/27132.txt
+-------------------------------------------------------------------------------------------------------------------------------------------------------- ---------------------------------
+Papers: No Results
+
+searchsploit vulnerability assessment for 25/tcp smtp Postfix smtpd: 
+Exploits: No Results
+Shellcodes: No Results
+Papers: No Results
+
+searchsploit vulnerability assessment for 53/tcp domain ISC BIND 9.4.2: 
+Exploits: No Results
+Shellcodes: No Results
+Papers: No Results
+
+searchsploit vulnerability assessment for 80/tcp http Apache httpd 2.2.8 ((Ubuntu) DAV/2): 
+Exploits: No Results
+Shellcodes: No Results
+Papers: No Results
+
+searchsploit vulnerability assessment for 111/tcp rpcbind 2 (RPC #100000): 
+Exploits: No Results
+Shellcodes: No Results
+Papers: No Results
+
+searchsploit vulnerability assessment for 139/tcp netbios-ssn Samba smbd 3.X - 4.X (workgroup: WORKGROUP): 
+Exploits: No Results
+Shellcodes: No Results
+Papers: No Results
+
+searchsploit vulnerability assessment for 445/tcp netbios-ssn Samba smbd 3.0.20-Debian (workgroup: WORKGROUP): 
+Exploits: No Results
+Shellcodes: No Results
+Papers: No Results
+
+searchsploit vulnerability assessment for 512/tcp exec netkit-rsh rexecd: 
+Exploits: No Results
+Shellcodes: No Results
+Papers: No Results
+
+searchsploit vulnerability assessment for 513/tcp login OpenBSD or Solaris rlogind: 
+Exploits: No Results
+Shellcodes: No Results
+Papers: No Results
+
+searchsploit vulnerability assessment for 514/tcp tcpwrapped: 
+Exploits: No Results
+Shellcodes: No Results
+Papers: No Results
+
+searchsploit vulnerability assessment for 1099/tcp java-rmi GNU Classpath grmiregistry: 
+Exploits: No Results
+Shellcodes: No Results
+Papers: No Results
+
+searchsploit vulnerability assessment for 1524/tcp bindshell Metasploitable root shell: 
+Exploits: No Results
+Shellcodes: No Results
+Papers: No Results
+
+searchsploit vulnerability assessment for 2049/tcp nfs 2-4 (RPC #100003): 
+Exploits: No Results
+Shellcodes: No Results
+Papers: No Results
+
+searchsploit vulnerability assessment for 2121/tcp ftp ProFTPD 1.3.1: 
+Exploits: No Results
+Shellcodes: No Results
+Papers: No Results
+
+searchsploit vulnerability assessment for 3306/tcp mysql MySQL 5.0.51a-3ubuntu5: 
+Exploits: No Results
+Shellcodes: No Results
+Papers: No Results
+
+searchsploit vulnerability assessment for 5432/tcp postgresql PostgreSQL DB 8.3.0 - 8.3.7: 
+Exploits: No Results
+Shellcodes: No Results
+Papers: No Results
+
+searchsploit vulnerability assessment for 5900/tcp vnc VNC (protocol 3.3): 
+Exploits: No Results
+Shellcodes: No Results
+Papers: No Results
+
+searchsploit vulnerability assessment for 6000/tcp X11 (access denied): 
+Exploits: No Results
+Shellcodes: No Results
+Papers: No Results
+
+searchsploit vulnerability assessment for 6667/tcp irc UnrealIRCd: 
+-------------------------------------------------------------------------------------------------------------------------------------------------------- ---------------------------------
+ Exploit Title                                                                                                                                          |  Path
+-------------------------------------------------------------------------------------------------------------------------------------------------------- ---------------------------------
+[01;31m[KUnrealIRCd[m[K 3.2.8.1 - Backdoor Command Execution (Metasploit)                                                                                            | linux/remote/16922.rb
+[01;31m[KUnrealIRCd[m[K 3.2.8.1 - Local Configuration Stack Overflow                                                                                                 | windows/dos/18011.txt
+[01;31m[KUnrealIRCd[m[K 3.2.8.1 - Remote Downloader/Execute                                                                                                          | linux/remote/13853.pl
+[01;31m[KUnrealIRCd[m[K 3.x - Remote Denial of Service                                                                                                               | windows/dos/27407.pl
+-------------------------------------------------------------------------------------------------------------------------------------------------------- ---------------------------------
+Shellcodes: No Results
+Papers: No Results
+
+searchsploit vulnerability assessment for 8009/tcp ajp13 Apache Jserv (Protocol v1.3): 
+Exploits: No Results
+Shellcodes: No Results
+Papers: No Results
+
+searchsploit vulnerability assessment for 8180/tcp http Apache Tomcat/Coyote JSP engine 1.1: 
+Exploits: No Results
+Shellcodes: No Results
+Papers: No Results
+
+searchsploit vulnerability assessment for 53/udp domain ISC BIND 9.4.2: 
+Exploits: No Results
+Shellcodes: No Results
+Papers: No Results
+
+searchsploit vulnerability assessment for 137/udp netbios-ns Microsoft Windows netbios-ns (workgroup: WORKGROUP): 
+Exploits: No Results
+Shellcodes: No Results
+Papers: No Results
+
+
+
+
+nmap TCP scan results on 192.168.19.254: 
+
+# Nmap 7.94SVN scan initiated Sat Oct 12 21:09:19 2024 as: /usr/lib/nmap/nmap -sV -Pn -A -oN nmap_TCP_192.168.19.254 192.168.19.254
+Nmap scan report for 192.168.19.254
+Host is up (0.00011s latency).
+All 1000 scanned ports on 192.168.19.254 are in ignored states.
+Not shown: 1000 filtered tcp ports (no-response)
+MAC Address: 00:50:56:F7:6A:97 (VMware)
+Too many fingerprints match this host to give specific OS details
+Network Distance: 1 hop
+
+TRACEROUTE
+HOP RTT     ADDRESS
+1   0.11 ms 192.168.19.254
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sat Oct 12 21:09:48 2024 -- 1 IP address (1 host up) scanned in 29.00 seconds
+
+
+masscan UDP scan results on 192.168.19.254: 
+
+
+
+searchsploit vulnerability assessment result for 192.168.19.254: 
+
+
+
+
